@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding:0px;
+    box-sizing:border-box;
+    /* font-family: 'Sora', sans-serif; */
+    font-family: 'Dosis', sans-serif;
+}
+
+:root{
+    --primary:#FB4D3D;
+    --dark:#0d0e11;
+    --text:#383D3B;
+    --body:#EEE5E9;
+  
+
+}
+p{
+    color:var(--text);
+    font-size:16px;
+    font-weight:600;
+    font-family: 'Dosis', sans-serif;
+}
+a{
+    text-decoration:none;
+    
+}
+img{
+    width:100%;
+}
+.btn{
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+    padding:12px 35px;
+    border-radius:25px;
+    background-color: var(--primary);
+    transition:.3s;
+}
+.btn:hover{
+    color:#bbb5b5;
+    background-color: #e74d3f;
+    letter-spacing:2px;
+}
+/* navbar */
+.nav_links li a{
+    font-size:14px;
+    font-weight:600;
+    color:var(--text);
+    margin-left:10px;
+    transition:.3s;
+}
+.nav_links li a:hover{
+    color:var(--primary);
+}
+
+.navbar .logo{
+    font-family: 'Lobster', cursive;
+    color:var(--primary);
+    
+}
+.navbar{
+    background: #383D3B;
+}
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.56),#583835),url(../imgs/hero.jpeg);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+.hero_content h3{
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:1.3px;
+}
+.hero_content h1{
+    font-size:55px;
+    font-weight:600;
+    font-family: 'Dosis', sans-serif;
+    
+}
+
+/* About section */
+.section{
+    padding-top:70px;
+    padding-bottom:70px;
+}
+.sec_about{
+    background-color: var(--body);
+}
+.section h2{
+    color:var(--dark);
+    font-size:35px;
+    font-family: 'Dosis', sans-serif;
+    position:relative;
+}
+.section h2::after{
+    content:"";
+    width: 100px;
+    height:2px;
+    position:absolute;
+    background-color: var(--primary);
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-20px;
+
+}
+.about_content{
+    background-color: #fff;
+    padding:35px 30px;
+    border-radius:5px;
+    box-shadow: -4px 3px 10px 0px rgba(56,61,59,0.55);
+-webkit-box-shadow: -4px 3px 10px 0px rgba(56,61,59,0.55);
+-moz-box-shadow: -4px 3px 10px 0px rgba(56,61,59,0.55);
+}
+.icons{
+    color:#fff;
+    font-size:30px;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto;
+    background-color: var(--primary);
+    flex:none;
+    
+}
+.about_content h3{
+    color:var(--text);
+    font-size:23px;
+    font-family: 'Dosis', sans-serif;
+    
+}
+/* breck section */
+.breck{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../imgs/breck2.jpg);
+ 
+    background-size: cover;
+    height:200px;
+    width:100%;
+}
+.breck_content h4{
+    font-size:42px;
+    font-weight:500;
+    font-family: 'Dosis', sans-serif;
+    position:relative;
+}
+.breck_content h4::after{
+   content:"";
+   position:absolute;
+   width:50px;
+   height:2px;
+   background-color: var(--primary);
+   left:50%;
+   bottom:-15px;
+   transform:translateX(-50%);
+}
+.breck_content h3{
+    font-size:20px;
+    font-weight:500;
+    font-family: 'Dosis', sans-serif;
+    padding-top:20px;
+}
+
+/* portfolio section */
+.port_content{
+    position:relative;
+    overflow:hidden;
+   
+}
+.port_info{
+    transition:all .4s ease;
+    position:absolute;
+    width:100%;
+    height:100%;
+    color:#fff;
+    background-color: var(--primary);
+    top:0;
+    left:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:15px 25px;
+    opacity:0;
+    transform:scale(0);
+
+}
+.port_content:hover .port_info{
+
+    opacity:1;
+    transform:scale(1);
+
+}
+
+/* services section */
+.service_box{
+    display:flex;
+}
+
+.service_box h5{
+    color:var(--text);
+    font-size:22px;
+    font-weight:600;
+}
+/* pricing section */
+.sec_pricing{
+    background-color: var(--body);
+}
+.pricing_box{
+    color:var(--text);
+    padding:40px 15px;
+    background-color: #fff;
+   
+    border-radius:5px;
+    transition:all .3s ease-in-out;
+}
+.pricing_box.active {
+     color:#fff;
+     background-color: var(--primary);
+    
+ }
+.pricing_box:hover {
+   color:#ffffff;
+    background-color: var(--primary);
+   
+}
+.pricing_box h6{
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:4px;
+}
+.pricing_box h1{
+    font-size:34px;
+    font-weight:600;
+    letter-spacing:4px;
+}
+.pricing_box ul li{
+    font-size:14px;
+    font-weight:600;
+    font-family: 'Dosis', sans-serif;
+}
+.price_btn{
+    padding:12px 50px;
+    font-weight:600;
+ 
+}
+.pricing_box.active .price_btn{
+    color:var(--primary);
+    background-color: #fff;
+}
+.pricing_box:hover .price_btn{
+    color:var(--primary);
+    background-color: #fff;
+}
+
+/* blog section */
+.blog_content h4{
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.contact{
+    width:100%;
+    height:200px;
+    background-color: var(--primary);
+}
